@@ -9,7 +9,11 @@ app.use('/src', express.static(path.join(__dirname, 'src')));
 
 // Serve the index.html file as the root route
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'src', 'index.html'));
+    res.sendFile(path.join(__dirname, 'src', 'login.html'));
+});
+
+app.get('/signup.html', (req, res) => {
+    res.sendFile(path.join(__dirname, 'src', 'signup.html'));
 });
 
 app.listen(port, () => {

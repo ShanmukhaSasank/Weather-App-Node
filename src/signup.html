@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Weather App</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+    <div id="signup-form" class="signup-form">
+        <h2>Sign Up</h2>
+        <input type="text" id="signup-username" placeholder="Username" required>
+        <input type="password" id="signup-password" placeholder="Password" required>
+        <input type="email" id="signup-email" placeholder="Email" required>
+        <input type="number" id="signup-number" placeholder="Number" required>
+        <button id="signup-button">Sign Up</button>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+
+    <script>
+        document.getElementById('signup-button').addEventListener('click', function() {
+            const username = document.getElementById('signup-username').value;
+            const password = document.getElementById('signup-password').value;
+            const email = document.getElementById('signup-email').value;
+            const number = document.getElementById('signup-number').value;
+
+            // Mock signup (replace with real signup logic)
+            // Assuming signup is successful
+            window.location.href = 'login.html';
+        });
+    </script>
+</body>
+</html>
